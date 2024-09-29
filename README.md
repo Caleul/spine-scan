@@ -13,7 +13,6 @@ This project is created to support a study aimed at determining which model prov
 - [Setup](#setup)
 - [Usage](#usage)
 - [Models](#models)
-- [License](#license)
 
 ## Features
 
@@ -26,14 +25,12 @@ This project is created to support a study aimed at determining which model prov
 - Python
 - TensorFlow / Keras
 - OpenCV
-- Docker
 - Docker Compose
 
 ## Setup
 
 ### Prerequisites
 
-- Install [Docker](https://docs.docker.com/get-docker/)
 - Install [Docker Compose](https://docs.docker.com/compose/install/)
 
 ### Cloning the Repository
@@ -47,15 +44,15 @@ cd spine-scan
 
 1. Run the Docker container:
 
-**Alert:** You first need to start the docker-desktop application.
+> **Warning:** You first need to start the docker-desktop application.
 
 ```bash
 docker-compose up
 ```
 
-**Notice:** On the first run, Docker will download the image used in the project.
+> **Notice:** On the first run, Docker will download the image used in the project.
 
-2. In the docker log there will be a link to the Jupyter Notebook.
+> In the docker log there will be a link to the Jupyter Notebook.
 
 ## Usage
 
