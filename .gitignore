@@ -1,8 +1,5 @@
-src/balanced-dataset
-src/.ipynb_checkpoints
-src/test-data
-src/dataset
-src/dataset/healthy
-src/dataset/kyphosis
-src/dataset/lordosis
-src/dataset.zip
+# IGNORE FILES
+src/balanced-dataset/
+src/.ipynb_checkpoints/
+src/test-data/
+src/dataset/
