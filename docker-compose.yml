@@ -2,10 +2,25 @@ version: '3.8'
 
 services:
   jupyter:
-    image: jupyter/base-notebook
+    image: jupyter/datascience-notebook
     ports:
       - "8888:8888"
     volumes:
       - ./src:/home/jovyan/work
     environment:
       - JUPYTER_ENABLE_LAB=yes
+      - GRANT_SUDO=yes
+    user: root
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    command: >
+      bash -c "
+      apt-get update &&
+      apt-get install -y libx11-dev libxt-dev libglu1-mesa-dev freeglut3-dev &&
+      pip install nibabel matplotlib mayavi &&
+      start-notebook.sh --NotebookApp.token=''
+      "

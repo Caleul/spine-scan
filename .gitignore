@@ -4,4 +4,10 @@ src/.ipynb_checkpoints/
 src/test-data/
 src/dataset/
 src/dataset-old/
+src/dataset-3d/
 src/CLASSIFICACAO-CURVATURAS.pdf
+src/normalized-dataset/
+src/columns
+src/balanced-dataset-generalist-model
+src/balanced-dataset-kyphosis-model
+src/balanced-dataset-lordosis-model
